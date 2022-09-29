@@ -1,0 +1,21 @@
+<p>peopledetails works!</p>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-md-10">
+            <div class="card mb-3" >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img class="img-fluid" src="https://image.tmdb.org/t/p/w500/{{personDetails['profile_path'] == undefined ? '/qDRGPAcQoW8Wuig9bvoLpHwf1gU.jpg' :personDetails['profile_path'] }}" />
+                  </div>
+                  <div class="col-md-8 mt-5 p-4" >
+                    <div class="card-body">
+                      <h5 class="card-title">{{personDetails['name']}}</h5>
+                      <p class="card-text">{{personDetails['overview']}}</p>
+                      <p class="card-text"><small class="text-muted">{{personDetails['popularity']}}</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

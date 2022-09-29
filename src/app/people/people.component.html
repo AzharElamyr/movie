@@ -1,4 +1,4 @@
-<div class="container-fluid ps-5 pe-5">
+<div class="container ps-5 pe-5">
     <div class="py-5">
       <input [(ngModel)]="term" type="text" class="form-control w-50 m-auto">
     </div>
@@ -11,7 +11,8 @@
             <div class="brdr w-100 "></div>
         </div>
     
-        <div *ngFor="let person of persons | peoplesearch:term" class="col-md-2">
+        <div *ngFor="let person of persons | peoplesearch:term let i=index" class="col-md-2">
+          <a [routerLink]="['/peopleDetails',currentPage,i]">
             <div class="movie py-2 position-relative">
                 <div class=" position-relative">
                     <img class="img-fluid" src="https://image.tmdb.org/t/p/w500/{{person['profile_path'] == undefined ? '/qDRGPAcQoW8Wuig9bvoLpHwf1gU.jpg' :person['profile_path'] }}" />
@@ -20,7 +21,8 @@
                 
                 <h6 class="text-white py-3">{{ person['name'] }}</h6>
                 <div class="vote">{{person['popularity']}}</div>
-            </div>
+             </div>
+          </a>
         </div>
       
     

@@ -17,7 +17,10 @@ import { MoviessearchPipe } from './moviessearch.pipe'
 import {FormsModule} from '@angular/forms';
 import { TvsearchPipe } from './tvsearch.pipe';
 import { PeoplesearchPipe } from './peoplesearch.pipe';
-import { MovieDetailsComponent } from './movie-details/movie-details.component'
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
+import { TvdetailsComponent } from './tvdetails/tvdetails.component';
+import { PeopledetailsComponent } from './peopledetails/peopledetails.component';
+import { HomedetailsComponent } from './homedetails/homedetails.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component'
     MoviessearchPipe,
     TvsearchPipe,
     PeoplesearchPipe,
-    MovieDetailsComponent
+    MovieDetailsComponent,
+    TvdetailsComponent,
+    PeopledetailsComponent,
+    HomedetailsComponent
   ],
   imports: [
     BrowserModule,
