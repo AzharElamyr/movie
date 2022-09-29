@@ -7,6 +7,7 @@ import {MovieService} from '../movie.service';
   styleUrls: ['./people.component.scss']
 })
 export class PeopleComponent implements OnInit {
+  term:string
   persons=[]
   pageNumbers:number[]=[]
   currentPage=4

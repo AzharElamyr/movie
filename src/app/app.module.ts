@@ -12,7 +12,11 @@ import { PeopleComponent } from './people/people.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import {HttpClientModule} from '@angular/common/http';
-import { SeemorePipe } from './seemore.pipe'
+import { SeemorePipe } from './seemore.pipe';
+import { MoviessearchPipe } from './moviessearch.pipe'
+import {FormsModule} from '@angular/forms';
+import { TvsearchPipe } from './tvsearch.pipe';
+import { PeoplesearchPipe } from './peoplesearch.pipe'
 
 @NgModule({
   declarations: [
@@ -25,12 +29,16 @@ import { SeemorePipe } from './seemore.pipe'
     PeopleComponent,
     ContactsComponent,
     NotfoundComponent,
-    SeemorePipe
+    SeemorePipe,
+    MoviessearchPipe,
+    TvsearchPipe,
+    PeoplesearchPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

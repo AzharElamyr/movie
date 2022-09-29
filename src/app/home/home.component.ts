@@ -7,6 +7,7 @@ import {MovieService} from '../movie.service'
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+ term:string
   pageNumbers:number[]=[]
   currentPage=1
   trendingAll=[]

@@ -7,6 +7,7 @@ import {MovieService} from '../movie.service'
   styleUrls: ['./movies.component.scss']
 })
 export class MoviesComponent implements OnInit {
+term:string;
 movies=[]
 pageNumbers:number[]=[]
 currentPage=1
