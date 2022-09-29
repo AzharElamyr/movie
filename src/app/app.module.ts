@@ -16,7 +16,8 @@ import { SeemorePipe } from './seemore.pipe';
 import { MoviessearchPipe } from './moviessearch.pipe'
 import {FormsModule} from '@angular/forms';
 import { TvsearchPipe } from './tvsearch.pipe';
-import { PeoplesearchPipe } from './peoplesearch.pipe'
+import { PeoplesearchPipe } from './peoplesearch.pipe';
+import { MovieDetailsComponent } from './movie-details/movie-details.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { PeoplesearchPipe } from './peoplesearch.pipe'
     SeemorePipe,
     MoviessearchPipe,
     TvsearchPipe,
-    PeoplesearchPipe
+    PeoplesearchPipe,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,

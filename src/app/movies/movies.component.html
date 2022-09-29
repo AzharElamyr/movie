@@ -10,7 +10,8 @@
             <div class="brdr w-100 "></div>
         </div>
        
-        <div *ngFor="let movie of movies | moviessearch:term;" class="col-md-3">
+        <div *ngFor="let movie of movies | moviessearch:term; let i=index" class="col-md-3">
+          <a [routerLink]='["/movieDetails",i]'>
             <div class="movie py-2 position-relative">
                 <div class=" position-relative">
                     <img class="img-fluid" src="https://image.tmdb.org/t/p/w500/{{movie['poster_path']}}" />
@@ -21,6 +22,7 @@
                 <div class="vote">{{movie['vote_average']}}</div>
                 <p class="text-white">{{movie['overview']|seemore:60}}</p>
             </div>
+          </a>
         </div>
       
     

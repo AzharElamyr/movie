@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/home.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MoviesComponent } from './movies/movies.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PeopleComponent } from './people/people.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'movies',component:MoviesComponent},
+  {path:'movieDetails/:id',component:MovieDetailsComponent},
   {path:'people',component:PeopleComponent},
   {path:'tv',component:TvComponent},
   {path:'contacts',component:ContactsComponent},
