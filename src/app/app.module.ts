@@ -11,7 +11,8 @@ import { MoviesComponent } from './movies/movies.component';
 import { PeopleComponent } from './people/people.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { SeemorePipe } from './seemore.pipe'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {HttpClientModule} from '@angular/common/http'
     MoviesComponent,
     PeopleComponent,
     ContactsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    SeemorePipe
   ],
   imports: [
     BrowserModule,
